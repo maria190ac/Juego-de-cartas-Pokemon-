@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Juego Pokemon</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="welcome-screen" class="centered pink-black-bg"> <h1>Bienvenido</h1> <p>Disfruta el juego, Te Amo💚</p> <div style="display:flex; justify-content:center; gap:40px; margin: 20px 0;"> <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="Gengar" class="pokemon-icon" /> <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" alt="Clefable" class="pokemon-icon" /> </div> <button id="to-password">Continuar</button> </div> <div id="password-screen" class="centered pink-black-bg hidden"> <h2>Ingresa la contraseña</h2> <input type="password" id="password-input" placeholder="Contraseña" autocomplete="off" /> <button id="check-password">Entrar</button> <p id="password-error" style="color:red; display:none;">Contraseña incorrecta, intenta de nuevo.</p> </div> <div id="name-screen" class="centered pink-black-bg hidden"> <h2>Hola María</h2> <p>Ingresa tu nombre:</p> <input type="text" id="player2-name" placeholder="Nombre del jugador 2" autocomplete="off" class="input-name" /> <button id="start-game">Empezar juego</button> </div> <div id="game-screen" class="hidden green-bg"> <h2 id="round-title">Ronda 1</h2> <p class="turn-indicator" id="turn-indicator">Turno de: María</p> <div class="card-grid" id="card-grid"></div> <div class="question-box hidden" id="question-box"> <p id="question-text"></p> <label for="answer-input">Tu respuesta:</label> <input type="text" id="answer-input" class="answer-input" autocomplete="off" /> <button id="submit-answer">Enviar respuesta</button> <button id="next-round" style="display:none; margin-top:10px;">Siguiente ronda</button> </div> </div> <div id="final-screen" class="centered green-bg hidden"> <h2>¡Juego terminado!</h2> <p id="score-display"></p> <p id="winner-text"></p> <button id="play-again">Jugar otra vez</button> <div id="fireworks" class="fireworks hidden">🎆🎆🎆</div> </div> <audio id="applause-sound" src="https://www.soundjay.com/human/applause-8.mp3"></audio>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
